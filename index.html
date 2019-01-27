@@ -31,7 +31,10 @@
 
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <!-- <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"> Login</span>
+                    </a> -->
+                    <a id="login" href="#loginModal">
                         <span class="fa fa-sign-in"> Login</span>
                     </a>
                 </span>
@@ -162,7 +165,7 @@
                         </a>
                 </div> -->
                 <div class="col-12 col-sm-3 align-self-center">
-                        <a class="btn btn-block bg-warning" data-toggle="modal" data-target="#reservation">
+                        <a class="btn btn-block bg-warning" id="reserveButton" href="#reservation">
                                 Reserve Table
                         </a>
                 </div>
@@ -393,6 +396,13 @@
             //      $('#mycarousel').carousel('cycle');
             //  });
 
+            $('#login').click(function () {
+                $('#loginModal').modal();
+            })
+            $('#reserveButton').click(function () {
+                $('#reservation').modal(); 
+            })
+
             $('#mycarousel').carousel({interval: 2000});
               $('#carouselButton').click(function () {
                   if ($('#carouselButton').children('span').hasClass('fa-pause')) {
@@ -409,9 +419,12 @@
         });
      </script>
      <!-- <script>
-         $(document).ready(function() {
-             $('[data-toggle="tooltip"]').tooltip();
-         })
+        //  $(document).ready(function() {
+        //      $('[data-toggle="tooltip"]').tooltip();
+        //  })
+        $(document).ready(function (){
+            $('#login').modal('toggle');
+        })
      </script> -->
 </body>
 
