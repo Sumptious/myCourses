@@ -1,7 +1,7 @@
 {
   "name": "confusion",
   "version": "1.0.0",
-  "description": "This is a website for Ristorante Con Fusion",
+  "description": "This is a website for Royal Suite",
   "main": "index.html",
   "scripts": {
     "start": "npm run watch:all",
@@ -23,9 +23,16 @@
     "grunt": "^1.0.3",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
     "grunt-sass": "^3.0.2",
+    "grunt-usemin": "^3.1.1",
     "htmlmin": "0.0.7",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.3.0",
@@ -39,8 +46,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "bootstrap-datepicker": "^1.8.0",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
+    "imagemin-jpegtran": "^6.0.0",
     "jquery": "^3.3.1",
     "less": "^3.9.0",
     "popper.js": "^1.12.9"
